@@ -38,6 +38,7 @@ data["token"] = os.environ.get("GITHUB_TOKEN")
 print(f"::add-mask::{data['token']}")
 
 url = f"https://api.github.com/repos/{data['project']}"
+print(url)
 
 headers = {
     "Accept": "application/vnd.github.v3+json",
